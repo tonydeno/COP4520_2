@@ -75,4 +75,24 @@ T = N(TV) + overheads
 Note that in both cases the amount of times N is random so that could drastically affect the run time of the program.
 
 # Experimental Evaluation
+Program 1
+* Average runtime for N = 10:
+Five seperate run times 
+(19011ms + 19012ms + 19012ms +19012ms + 19011ms) / 5 = 19011.6ms avg
+
+* Average runtime for N = 5
+  Five seperate run times
+  (9003ms + 9005ms + 9005ms +9003ms + 9004ms) / 5 = 9004ms avg
+* Conclusion:
+    Realtively consistent runtimes mean the randomness of deciding to choose doesn't really affect the runtime
+    Since the scaling between the two threads is nearly linear that means the threads are properly and efficently managed.
+    Would need to test more iterations to get a more conclusive result on that but the program doubling seems to be indicative.
+
+
+Program 2
+* Average Runtime for N = 10
+Average Runtime for N = 5
+
+
+
 
