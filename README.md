@@ -91,7 +91,19 @@ Five seperate run times
 
 Program 2
 * Average Runtime for N = 10
-Average Runtime for N = 5
+  (34022ms + 59040ms + 12007ms + 20013ms + 22013ms) / 5 = 29419ms
+*Average Runtime for N = 5
+(8005ms + 15009ms + 7006ms +7005ms + 19012ms) / 5 = 9806.4ms
+
+*Conclusion
+ The use of mutexes and condition variables ensures thread safety and coordination but also introduces overhead, especially with a larger number of threads. The need to frequently lock and unlock the mutex for each guest's action and the waiting on condition variables can significantly contribute to the runtime but are needed to accurately simulate the scenario. Also the Randomness seems to have more of an effect on this 
+ program.
+
+Notes
+*1second sleep period to simulate visiting the showroom or maze for part1 and part2
+*Programs tested on a laptop with AMD Ryzen 7 5000 series
+*NumberOfCores  NumberOfLogicalProcessors
+  8              16
 
 
 
